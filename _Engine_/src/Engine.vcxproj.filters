@@ -106,12 +106,6 @@
     <None Include="..\..\Shaders\texture.vs">
       <Filter>src\Shaders\graphic shaders</Filter>
     </None>
-    <None Include="..\..\Shaders\texturePointLight.fs">
-      <Filter>src\Shaders\graphic shaders</Filter>
-    </None>
-    <None Include="..\..\Shaders\texturePointLight.vs">
-      <Filter>src\Shaders\graphic shaders</Filter>
-    </None>
     <None Include="..\..\Shaders\wireframe.fs">
       <Filter>src\Shaders\graphic shaders</Filter>
     </None>
@@ -179,12 +173,6 @@
       <Filter>src\Shaders\graphic shaders</Filter>
     </None>
     <None Include="..\..\Shaders\texLight.vs">
-      <Filter>src\Shaders\graphic shaders</Filter>
-    </None>
-    <None Include="..\..\Shaders\blinnphong.fs">
-      <Filter>src\Shaders\graphic shaders</Filter>
-    </None>
-    <None Include="..\..\Shaders\blinnphong.vs">
       <Filter>src\Shaders\graphic shaders</Filter>
     </None>
   </ItemGroup>
@@ -408,9 +396,6 @@
     <ClInclude Include="GraphicsObj\GraphicsObj_Texture.h">
       <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
     </ClInclude>
-    <ClInclude Include="GraphicsObj\GraphicsObj_TextureLight.h">
-      <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
-    </ClInclude>
     <ClInclude Include="GraphicsObj\GraphicsObj_Wireframe.h">
       <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
     </ClInclude>
@@ -512,9 +497,6 @@
     </ClInclude>
     <ClInclude Include="Scenes\Demo4.h">
       <Filter>src\Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="GraphicsObj\GraphicsObj_BlinnPhong.h">
-      <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
     </ClInclude>
     <ClInclude Include="Scenes\Demo5.h">
       <Filter>src\Scenes</Filter>
@@ -713,9 +695,6 @@
     <ClCompile Include="GraphicsObj\GraphicsObj_Texture.cpp">
       <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
     </ClCompile>
-    <ClCompile Include="GraphicsObj\GraphicsObj_TextureLight.cpp">
-      <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
-    </ClCompile>
     <ClCompile Include="GraphicsObj\GraphicsObj_Wireframe.cpp">
       <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
     </ClCompile>
@@ -808,9 +787,6 @@
     </ClCompile>
     <ClCompile Include="Scenes\Demo3.cpp">
       <Filter>src\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="GraphicsObj\GraphicsObj_BlinnPhong.cpp">
-      <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
     </ClCompile>
     <ClCompile Include="Scenes\Demo4.cpp">
       <Filter>src\Scenes</Filter>

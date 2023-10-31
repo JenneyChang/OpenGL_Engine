@@ -24,8 +24,6 @@
     <None Include="..\..\ProtoFiles\vbo_proto.proto" />
     <None Include="..\..\ProtoFiles\vec3_proto.proto" />
     <None Include="..\..\ProtoFiles\vec4_proto.proto" />
-    <None Include="..\..\Shaders\blinnphong.fs" />
-    <None Include="..\..\Shaders\blinnphong.vs" />
     <None Include="..\..\Shaders\mixer.cs.glsl" />
     <None Include="..\..\Shaders\null.fs" />
     <None Include="..\..\Shaders\null.vs" />
@@ -37,8 +35,6 @@
     <None Include="..\..\Shaders\wireframe.vs" />
     <None Include="..\..\Shaders\sprite.fs" />
     <None Include="..\..\Shaders\sprite.vs" />
-    <None Include="..\..\Shaders\texturePointLight.fs" />
-    <None Include="..\..\Shaders\texturePointLight.vs" />
     <None Include="..\..\Shaders\texture.fs" />
     <None Include="..\..\Shaders\texture.vs" />
     <None Include="..\..\Shaders\worldMatrix.cs.glsl" />
@@ -112,13 +108,11 @@
     <ClInclude Include="GraphicsObj\GraphicsObj.h" />
     <ClInclude Include="GraphicsObj\GraphicsObj2D.h" />
     <ClInclude Include="GraphicsObj\GraphicsObj3D.h" />
-    <ClInclude Include="GraphicsObj\GraphicsObj_BlinnPhong.h" />
     <ClInclude Include="GraphicsObj\GraphicsObj_Font.h" />
     <ClInclude Include="GraphicsObj\GraphicsObj_Null3D.h" />
     <ClInclude Include="GraphicsObj\GraphicsObj_Skin.h" />
     <ClInclude Include="GraphicsObj\GraphicsObj_Sprite.h" />
     <ClInclude Include="GraphicsObj\GraphicsObj_Texture.h" />
-    <ClInclude Include="GraphicsObj\GraphicsObj_TextureLight.h" />
     <ClInclude Include="GraphicsObj\GraphicsObj_Wireframe.h" />
     <ClInclude Include="GraphicsObj\Light.h" />
     <ClInclude Include="GraphicsObj\Material.h" />
@@ -218,13 +212,11 @@
     <ClCompile Include="GraphicsObj\GraphicsObj.cpp" />
     <ClCompile Include="GraphicsObj\GraphicsObj2D.cpp" />
     <ClCompile Include="GraphicsObj\GraphicsObj3D.cpp" />
-    <ClCompile Include="GraphicsObj\GraphicsObj_BlinnPhong.cpp" />
     <ClCompile Include="GraphicsObj\GraphicsObj_Font.cpp" />
     <ClCompile Include="GraphicsObj\GraphicsObj_Null3D.cpp" />
     <ClCompile Include="GraphicsObj\GraphicsObj_Skin.cpp" />
     <ClCompile Include="GraphicsObj\GraphicsObj_Sprite.cpp" />
     <ClCompile Include="GraphicsObj\GraphicsObj_Texture.cpp" />
-    <ClCompile Include="GraphicsObj\GraphicsObj_TextureLight.cpp" />
     <ClCompile Include="GraphicsObj\GraphicsObj_Wireframe.cpp" />
     <ClCompile Include="Image\Image.cpp" />
     <ClCompile Include="Image\ImageMan.cpp" />
