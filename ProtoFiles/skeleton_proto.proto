@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option optimize_for = LITE_RUNTIME;
+
+message skeleton_proto_mssg
+{
+	sint32	nodeIndex	= 1;
+	sint32	parentIndex = 2;
+	sint32	prevIndex	= 3;
+	sint32	nextIndex	= 4;
+	bytes	nodeName	= 5;
+	bytes	parentName	= 6;
+}

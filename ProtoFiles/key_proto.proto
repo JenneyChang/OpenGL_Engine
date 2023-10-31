@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option optimize_for = LITE_RUNTIME;
+
+message key_proto_mssg
+{
+	uint32		key		= 1;
+	uint32		x		= 2;
+	uint32		y		= 3;
+	uint32		w		= 4;
+	uint32		h		= 5;
+}

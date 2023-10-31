@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option optimize_for = LITE_RUNTIME;
+
+import "clip_proto.proto";
+
+message anim_proto_mssg
+{
+				uint32					numclips		= 1;
+				uint32					skelsize		= 2;
+	repeated	clip_proto_mssg			clips			= 3;
+}

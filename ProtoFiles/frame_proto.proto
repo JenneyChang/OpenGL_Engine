@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option optimize_for = LITE_RUNTIME;
+
+import "bone_proto.proto";
+
+message frame_proto_mssg
+{
+				uint32			frameNo = 1;
+				float			keytime = 2;
+	repeated	bone_proto_mssg bones	= 3;
+}

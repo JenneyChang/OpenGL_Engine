@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option optimize_for = LITE_RUNTIME;
+
+import "vec3_proto.proto";
+import "vec4_proto.proto";
+
+message bone_proto_mssg
+{
+	vec3_proto_mssg		scale	= 1;
+	vec3_proto_mssg		trans	= 2;
+	vec4_proto_mssg		rot		= 3;
+}

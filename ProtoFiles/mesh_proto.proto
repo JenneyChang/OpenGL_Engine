@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+import "vbo_proto.proto";
+import "vec3_proto.proto";
+import "vec4_proto.proto";
+
+option optimize_for = LITE_RUNTIME;
+
+message mesh_proto_mssg
+{
+	enum RENDER_MODE
+	{
+		POINTS         = 0;
+		LINE           = 1;
+		LINE_LOOP      = 2;
+		LINE_STRIP     = 3;
+		TRIANGLES      = 4;
+		TRIANGLE_STRIP = 5;
+		TRIANGLE_FAN   = 6;
+	};
+
+	bytes				meshName		= 1;
+	RENDER_MODE			renderMode		= 2;
+	uint32				hashid			= 3;
+	uint32				numMeshes		= 4;
+	uint32				triCount		= 5;
+	uint32				vertCount		= 6;
+
+	vbo_proto_mssg		vertices		= 7;
+	vbo_proto_mssg		normals			= 8;
+	vbo_proto_mssg		texCoords		= 9;
+	vbo_proto_mssg		indices			= 10;
+
+	vbo_proto_mssg		weights			= 11;
+	vbo_proto_mssg		joints			= 12;
+	vbo_proto_mssg		invBind			= 13;
+
+	vec3_proto_mssg		bounding_sphere = 14;
+	float				radius			= 15;
+
+	vec4_proto_mssg		baseColor		= 16;
+
+}

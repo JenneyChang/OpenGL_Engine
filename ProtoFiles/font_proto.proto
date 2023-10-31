@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option optimize_for = LITE_RUNTIME;
+
+import "key_proto.proto";
+import "texture_proto.proto";
+
+message font_proto_mssg
+{
+				bytes				fontname	= 1;
+				texture_proto_mssg	fontTex		= 2;
+	repeated	key_proto_mssg		keys		= 3;
+}

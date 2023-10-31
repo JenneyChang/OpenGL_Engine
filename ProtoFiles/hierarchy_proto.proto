@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option optimize_for = LITE_RUNTIME;
+
+import "skeleton_proto.proto";
+
+message hierarchy_proto_mssg
+{
+				sint32				skelSize		= 1;
+				sint32				hierarchyDepth	= 2;
+				uint32				tableSize		= 3;
+	repeated	skeleton_proto_mssg	origList		= 4;
+	repeated	skeleton_proto_mssg	orderedList		= 5;
+	repeated	skeleton_proto_mssg correctedList	= 6;
+	repeated	sint32				hierarchyTable	= 7;
+}

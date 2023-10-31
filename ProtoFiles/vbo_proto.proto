@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+option optimize_for = LITE_RUNTIME;
+
+message vbo_proto_mssg
+{
+		enum TARGET
+	{
+		ARRAY_BUFFER = 0;
+		ELEMENT_ARRAY_BUFFER = 1;
+	};
+
+		enum COMPONENT
+	{
+		BYTE = 0;
+		UNSIGNED_BYTE = 1;
+		SHORT = 2;
+		UNSIGNED_SHORT = 3;
+		INT = 4;
+		UNSIGNED_INT = 5;
+		FLOAT = 6;
+		DOUBLE = 7;
+	};
+
+		enum TYPE
+	{
+		VEC2 = 0;
+		VEC3 = 1;
+		VEC4 = 2;
+		MAT2 = 3;
+		MAT3 = 4;
+		MAT4 = 5;
+		SCALAR = 6;
+		VECTOR = 7;
+		MATRIX = 8;
+	};
+
+	TARGET		target		= 1;
+	COMPONENT	component	= 2;
+	TYPE		type		= 3;
+	bool		enabled		= 4;
+	uint32		attribIndex = 5;
+	uint32		count		= 6;
+	uint32		dataSize	= 7;
+	bytes		pData		= 8;
+
+}

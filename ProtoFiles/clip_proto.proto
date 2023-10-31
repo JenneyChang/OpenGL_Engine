@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option optimize_for = LITE_RUNTIME;
+
+import "frame_proto.proto";
+
+message clip_proto_mssg
+{
+				uint32			 numframes	= 1;
+				float			 duration	= 2;
+	repeated	frame_proto_mssg frames		= 3;
+}
