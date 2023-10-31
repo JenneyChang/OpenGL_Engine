@@ -1,0 +1,848 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="_Framework">
+      <UniqueIdentifier>{0b776af2-bfcb-4635-9387-79853b59c5c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src\Input">
+      <UniqueIdentifier>{9c976ddd-112d-4ada-9e6a-1233e8eda3dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Game">
+      <UniqueIdentifier>{e017e9c6-ff0c-4c2a-ab60-a6a521c94eb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_libs">
+      <UniqueIdentifier>{5d91065a-6981-4ee2-816c-b27bc40a5846}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Camera">
+      <UniqueIdentifier>{bdbd487f-0ae8-47c1-b343-479e2ea86884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Mesh">
+      <UniqueIdentifier>{b148b327-4ff1-4a3f-879b-c87811defa22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Texture">
+      <UniqueIdentifier>{18aaef0d-65f1-43a5-a69b-b1e40fd9d96d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Shaders">
+      <UniqueIdentifier>{c783195b-b3a2-424e-bcfa-02281497dfcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Shaders\graphic shaders">
+      <UniqueIdentifier>{4d119cc2-5572-4c52-a90c-48b56dcef108}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Shaders\compute shaders">
+      <UniqueIdentifier>{8d4fc3f3-27a6-41db-91f4-6a08f2a187a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Image">
+      <UniqueIdentifier>{333ae291-a09d-4440-9abd-a1fbb855e01a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GraphicsObj">
+      <UniqueIdentifier>{70d9504d-7632-44e6-b260-b5142bee8d22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameObj">
+      <UniqueIdentifier>{40f464a7-beb5-4b87-846d-a5e6d9180595}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Anim">
+      <UniqueIdentifier>{5f7c269b-6d9a-451d-9790-042837e04c3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Font">
+      <UniqueIdentifier>{3ec62a19-5f9e-43d5-807d-ff058a0e1212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameObj\GameObj 2D">
+      <UniqueIdentifier>{ef49bbf0-fcd9-4144-8811-d250b23ee9cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameObj\GameObj 3D">
+      <UniqueIdentifier>{bbbb1155-6701-4642-9d36-a11b8e78a632}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GraphicsObj\GraphicsObj 2D">
+      <UniqueIdentifier>{1d6c5e02-b198-4731-8dfc-058be32ccd45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GraphicsObj\GraphicsObj 3D">
+      <UniqueIdentifier>{e4baa1d9-77d4-43c1-87fb-bff266497005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\TimeEvents">
+      <UniqueIdentifier>{3493c6f4-9ab2-4fa7-ae63-4e5abcf8564a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Anim\Clip">
+      <UniqueIdentifier>{6e512198-edf3-4f43-b5d8-637574b43891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Anim\Skeleton">
+      <UniqueIdentifier>{dcae08e4-343e-4c8c-924b-4c842dff8960}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Anim\Animation">
+      <UniqueIdentifier>{8b3d6bdd-b73f-418f-8827-0d4058a65958}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Anim\Timer">
+      <UniqueIdentifier>{9c2de8cb-d9da-435b-8f9e-27d89e2cc45b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Camera\2D">
+      <UniqueIdentifier>{fba70c7c-8576-48d2-96e7-669b49dc90da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Camera\3D">
+      <UniqueIdentifier>{237bcb9b-1609-4ebb-b13f-76c982b105df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Scenes">
+      <UniqueIdentifier>{7531df0c-d044-4004-bd0f-05c230082f2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProtoFiles">
+      <UniqueIdentifier>{98a6aa45-469a-4b11-a5fd-590c5574a0a0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Framework\__DO NOT MODIFY__">
+      <Filter>_Framework</Filter>
+    </None>
+    <None Include="..\..\Shaders\sprite.fs">
+      <Filter>src\Shaders\graphic shaders</Filter>
+    </None>
+    <None Include="..\..\Shaders\sprite.vs">
+      <Filter>src\Shaders\graphic shaders</Filter>
+    </None>
+    <None Include="..\..\Shaders\texture.fs">
+      <Filter>src\Shaders\graphic shaders</Filter>
+    </None>
+    <None Include="..\..\Shaders\texture.vs">
+      <Filter>src\Shaders\graphic shaders</Filter>
+    </None>
+    <None Include="..\..\Shaders\texturePointLight.fs">
+      <Filter>src\Shaders\graphic shaders</Filter>
+    </None>
+    <None Include="..\..\Shaders\texturePointLight.vs">
+      <Filter>src\Shaders\graphic shaders</Filter>
+    </None>
+    <None Include="..\..\Shaders\wireframe.fs">
+      <Filter>src\Shaders\graphic shaders</Filter>
+    </None>
+    <None Include="..\..\Shaders\wireframe.vs">
+      <Filter>src\Shaders\graphic shaders</Filter>
+    </None>
+    <None Include="..\..\ProtoFiles\anim_proto.proto">
+      <Filter>ProtoFiles</Filter>
+    </None>
+    <None Include="..\..\ProtoFiles\bone_proto.proto">
+      <Filter>ProtoFiles</Filter>
+    </None>
+    <None Include="..\..\ProtoFiles\clip_proto.proto">
+      <Filter>ProtoFiles</Filter>
+    </None>
+    <None Include="..\..\ProtoFiles\font_proto.proto">
+      <Filter>ProtoFiles</Filter>
+    </None>
+    <None Include="..\..\ProtoFiles\frame_proto.proto">
+      <Filter>ProtoFiles</Filter>
+    </None>
+    <None Include="..\..\ProtoFiles\hierarchy_proto.proto">
+      <Filter>ProtoFiles</Filter>
+    </None>
+    <None Include="..\..\ProtoFiles\key_proto.proto">
+      <Filter>ProtoFiles</Filter>
+    </None>
+    <None Include="..\..\ProtoFiles\mesh_proto.proto">
+      <Filter>ProtoFiles</Filter>
+    </None>
+    <None Include="..\..\ProtoFiles\skeleton_proto.proto">
+      <Filter>ProtoFiles</Filter>
+    </None>
+    <None Include="..\..\ProtoFiles\texture_proto.proto">
+      <Filter>ProtoFiles</Filter>
+    </None>
+    <None Include="..\..\ProtoFiles\vbo_proto.proto">
+      <Filter>ProtoFiles</Filter>
+    </None>
+    <None Include="..\..\ProtoFiles\vec3_proto.proto">
+      <Filter>ProtoFiles</Filter>
+    </None>
+    <None Include="..\..\ProtoFiles\vec4_proto.proto">
+      <Filter>ProtoFiles</Filter>
+    </None>
+    <None Include="..\..\Shaders\null.fs">
+      <Filter>src\Shaders\graphic shaders</Filter>
+    </None>
+    <None Include="..\..\Shaders\null.vs">
+      <Filter>src\Shaders\graphic shaders</Filter>
+    </None>
+    <None Include="..\..\Shaders\skinTexture.fs">
+      <Filter>src\Shaders\graphic shaders</Filter>
+    </None>
+    <None Include="..\..\Shaders\skinTexture.vs">
+      <Filter>src\Shaders\graphic shaders</Filter>
+    </None>
+    <None Include="..\..\Shaders\mixer.cs.glsl">
+      <Filter>src\Shaders\compute shaders</Filter>
+    </None>
+    <None Include="..\..\Shaders\worldMatrix.cs.glsl">
+      <Filter>src\Shaders\compute shaders</Filter>
+    </None>
+    <None Include="..\..\Shaders\texLight.fs">
+      <Filter>src\Shaders\graphic shaders</Filter>
+    </None>
+    <None Include="..\..\Shaders\texLight.vs">
+      <Filter>src\Shaders\graphic shaders</Filter>
+    </None>
+    <None Include="..\..\Shaders\blinnphong.fs">
+      <Filter>src\Shaders\graphic shaders</Filter>
+    </None>
+    <None Include="..\..\Shaders\blinnphong.vs">
+      <Filter>src\Shaders\graphic shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Framework\Framework.h">
+      <Filter>_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\ThreadFramework.h">
+      <Filter>_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\ProjectSettings.h">
+      <Filter>_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Engine.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Game.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameMan.h">
+      <Filter>src\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\InputMan.h">
+      <Filter>src\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\InputTest.h">
+      <Filter>src\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\Keyboard.h">
+      <Filter>src\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\Mouse.h">
+      <Filter>src\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera\Camera.h">
+      <Filter>src\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh\Mesh.h">
+      <Filter>src\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh\MeshNull.h">
+      <Filter>src\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh\MeshNode.h">
+      <Filter>src\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh\MeshNodeMan.h">
+      <Filter>src\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh\ProtoMesh.h">
+      <Filter>src\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture\Texture.h">
+      <Filter>src\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture\TextureMan.h">
+      <Filter>src\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderObj\ShaderObj.h">
+      <Filter>src\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderObj\ShaderGraphics.h">
+      <Filter>src\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderObj\ShaderCompute.h">
+      <Filter>src\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderObj\ShaderMan.h">
+      <Filter>src\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Shaders\ShaderLayout.h">
+      <Filter>src\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Image.h">
+      <Filter>src\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Rect.h">
+      <Filter>src\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObj\Material.h">
+      <Filter>src\GraphicsObj</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObj\GraphicsObj.h">
+      <Filter>src\GraphicsObj</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\ImageMan.h">
+      <Filter>src\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObj\GameObj.h">
+      <Filter>src\GameObj</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObj\GameObj_Null.h">
+      <Filter>src\GameObj</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObj\GameObjMan.h">
+      <Filter>src\GameObj</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderObj\ShaderNode.h">
+      <Filter>src\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\anim_proto.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\anim_proto.pb.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\bone_proto.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\bone_proto.pb.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\clip_proto.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\clip_proto.pb.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\font_proto.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\font_proto.pb.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\frame_proto.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\frame_proto.pb.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\hierarchy_proto.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\hierarchy_proto.pb.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\key_proto.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\key_proto.pb.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\mesh_proto.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\mesh_proto.pb.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\skeleton_proto.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\skeleton_proto.pb.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\texture_proto.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\texture_proto.pb.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\vbo_proto.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\vbo_proto.pb.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\vec3_proto.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\vec3_proto.pb.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\vec4_proto.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProtoFiles\vec4_proto.pb.h">
+      <Filter>ProtoFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture\Translate.h">
+      <Filter>src\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Font\Glyph.h">
+      <Filter>src\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Font\GlyphMan.h">
+      <Filter>src\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Font\Font.h">
+      <Filter>src\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Font\FontMan.h">
+      <Filter>src\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObj\GameObj_BSphere.h">
+      <Filter>src\GameObj\GameObj 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObj\GameObj_Dynamic.h">
+      <Filter>src\GameObj\GameObj 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObj\GameObj_Rigid.h">
+      <Filter>src\GameObj\GameObj 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObj\GameObj_Skin.h">
+      <Filter>src\GameObj\GameObj 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObj\GameObj_Static.h">
+      <Filter>src\GameObj\GameObj 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObj\GameObj_SpriteBatch.h">
+      <Filter>src\GameObj\GameObj 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObj\GameObj2D.h">
+      <Filter>src\GameObj\GameObj 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObj\GraphicsObj2D.h">
+      <Filter>src\GraphicsObj\GraphicsObj 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObj\GraphicsObj3D.h">
+      <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObj\GraphicsObj_Texture.h">
+      <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObj\GraphicsObj_TextureLight.h">
+      <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObj\GraphicsObj_Wireframe.h">
+      <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObj\GraphicsObj_Font.h">
+      <Filter>src\GraphicsObj\GraphicsObj 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObj\GraphicsObj_Sprite.h">
+      <Filter>src\GraphicsObj\GraphicsObj 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObj\GameObj3D.h">
+      <Filter>src\GameObj\GameObj 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObj\GraphicsObj_Skin.h">
+      <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObj\GraphicsObj_Null3D.h">
+      <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderObj\SSBO.h">
+      <Filter>src\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeEvents\Command.h">
+      <Filter>src\TimeEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeEvents\AnimateSprite.h">
+      <Filter>src\TimeEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeEvents\TimerEvent.h">
+      <Filter>src\TimeEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeEvents\TimerEventMan.h">
+      <Filter>src\TimeEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\ImageNode.h">
+      <Filter>src\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Anim\Clip.h">
+      <Filter>src\Anim\Clip</Filter>
+    </ClInclude>
+    <ClInclude Include="Anim\ClipMan.h">
+      <Filter>src\Anim\Clip</Filter>
+    </ClInclude>
+    <ClInclude Include="Anim\Skeleton.h">
+      <Filter>src\Anim\Skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Anim\SkeletonMan.h">
+      <Filter>src\Anim\Skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Anim\Anim.h">
+      <Filter>src\Anim\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Anim\AnimMan.h">
+      <Filter>src\Anim\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Anim\Timer.h">
+      <Filter>src\Anim\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Anim\Joint.h">
+      <Filter>src\Anim\Skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Anim\Mixer.h">
+      <Filter>src\Anim\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObj\Light.h">
+      <Filter>src\GraphicsObj</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh\CameraMesh.h">
+      <Filter>src\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera\Camera2D.h">
+      <Filter>src\Camera\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera\Camera2DMan.h">
+      <Filter>src\Camera\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera\Camera3D.h">
+      <Filter>src\Camera\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera\Camera3D_Ctrl.h">
+      <Filter>src\Camera\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera\Camera3DMan.h">
+      <Filter>src\Camera\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera\BoundingSphere.h">
+      <Filter>src\Camera\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\Scene.h">
+      <Filter>src\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\SceneMan.h">
+      <Filter>src\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\Demo1.h">
+      <Filter>src\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\Demo3.h">
+      <Filter>src\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\Demo4.h">
+      <Filter>src\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObj\GraphicsObj_BlinnPhong.h">
+      <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\Demo5.h">
+      <Filter>src\Scenes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game\Engine.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Game.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameMan.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\InputMan.cpp">
+      <Filter>src\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\InputTest.cpp">
+      <Filter>src\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\Keyboard.cpp">
+      <Filter>src\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\Mouse.cpp">
+      <Filter>src\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\Camera.cpp">
+      <Filter>src\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh\Mesh.cpp">
+      <Filter>src\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh\MeshNull.cpp">
+      <Filter>src\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh\MeshNode.cpp">
+      <Filter>src\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh\MeshNodeMan.cpp">
+      <Filter>src\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture\Texture.cpp">
+      <Filter>src\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture\TextureMan.cpp">
+      <Filter>src\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderObj\ShaderObj.cpp">
+      <Filter>src\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderObj\ShaderGraphics.cpp">
+      <Filter>src\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderObj\ShaderCompute.cpp">
+      <Filter>src\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderObj\ShaderMan.cpp">
+      <Filter>src\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\Image.cpp">
+      <Filter>src\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObj\GraphicsObj.cpp">
+      <Filter>src\GraphicsObj</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\ImageMan.cpp">
+      <Filter>src\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObj\GameObj.cpp">
+      <Filter>src\GameObj</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObj\GameObj_Null.cpp">
+      <Filter>src\GameObj</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObj\GameObjMan.cpp">
+      <Filter>src\GameObj</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderObj\ShaderNode.cpp">
+      <Filter>src\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh\ProtoMesh.cpp">
+      <Filter>src\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\anim_proto.cpp">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\anim_proto.pb.cc">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\bone_proto.cpp">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\bone_proto.pb.cc">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\clip_proto.cpp">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\clip_proto.pb.cc">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\font_proto.cpp">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\font_proto.pb.cc">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\frame_proto.cpp">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\frame_proto.pb.cc">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\hierarchy_proto.cpp">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\hierarchy_proto.pb.cc">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\key_proto.cpp">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\key_proto.pb.cc">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\mesh_proto.cpp">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\mesh_proto.pb.cc">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\skeleton_proto.cpp">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\skeleton_proto.pb.cc">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\texture_proto.cpp">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\texture_proto.pb.cc">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\vbo_proto.cpp">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\vbo_proto.pb.cc">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\vec3_proto.cpp">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\vec3_proto.pb.cc">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\vec4_proto.cpp">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProtoFiles\vec4_proto.pb.cc">
+      <Filter>ProtoFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture\Translate.cpp">
+      <Filter>src\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Font\Glyph.cpp">
+      <Filter>src\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Font\GlyphMan.cpp">
+      <Filter>src\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Font\Font.cpp">
+      <Filter>src\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Font\FontMan.cpp">
+      <Filter>src\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObj\GameObj_BSphere.cpp">
+      <Filter>src\GameObj\GameObj 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObj\GameObj_Rigid.cpp">
+      <Filter>src\GameObj\GameObj 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObj\GameObj_Skin.cpp">
+      <Filter>src\GameObj\GameObj 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObj\GameObj2D.cpp">
+      <Filter>src\GameObj\GameObj 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObj\GameObj_SpriteBatch.cpp">
+      <Filter>src\GameObj\GameObj 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObj\GraphicsObj3D.cpp">
+      <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObj\GraphicsObj_Texture.cpp">
+      <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObj\GraphicsObj_TextureLight.cpp">
+      <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObj\GraphicsObj_Wireframe.cpp">
+      <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObj\GraphicsObj2D.cpp">
+      <Filter>src\GraphicsObj\GraphicsObj 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObj\GraphicsObj_Sprite.cpp">
+      <Filter>src\GraphicsObj\GraphicsObj 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObj\GraphicsObj_Font.cpp">
+      <Filter>src\GraphicsObj\GraphicsObj 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObj\GameObj3D.cpp">
+      <Filter>src\GameObj\GameObj 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObj\GraphicsObj_Skin.cpp">
+      <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObj\GraphicsObj_Null3D.cpp">
+      <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderObj\SSBO.cpp">
+      <Filter>src\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeEvents\TimerEvent.cpp">
+      <Filter>src\TimeEvents</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeEvents\TimerEventMan.cpp">
+      <Filter>src\TimeEvents</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeEvents\AnimateSprite.cpp">
+      <Filter>src\TimeEvents</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\ImageNode.cpp">
+      <Filter>src\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Anim\Clip.cpp">
+      <Filter>src\Anim\Clip</Filter>
+    </ClCompile>
+    <ClCompile Include="Anim\ClipMan.cpp">
+      <Filter>src\Anim\Clip</Filter>
+    </ClCompile>
+    <ClCompile Include="Anim\Skeleton.cpp">
+      <Filter>src\Anim\Skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="Anim\SkeletonMan.cpp">
+      <Filter>src\Anim\Skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="Anim\Anim.cpp">
+      <Filter>src\Anim\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Anim\AnimMan.cpp">
+      <Filter>src\Anim\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Anim\Timer.cpp">
+      <Filter>src\Anim\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Anim\Mixer.cpp">
+      <Filter>src\Anim\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh\CameraMesh.cpp">
+      <Filter>src\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\main.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\Camera2D.cpp">
+      <Filter>src\Camera\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\Camera2DMan.cpp">
+      <Filter>src\Camera\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\Camera3D.cpp">
+      <Filter>src\Camera\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\Camera3DMan.cpp">
+      <Filter>src\Camera\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\BoundingSphere.cpp">
+      <Filter>src\Camera\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\Camera3D_Ctrl.cpp">
+      <Filter>src\Camera\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\SceneMan.cpp">
+      <Filter>src\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\Demo1.cpp">
+      <Filter>src\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\Demo3.cpp">
+      <Filter>src\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObj\GraphicsObj_BlinnPhong.cpp">
+      <Filter>src\GraphicsObj\GraphicsObj 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\Demo4.cpp">
+      <Filter>src\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\Demo5.cpp">
+      <Filter>src\Scenes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\ProtoBuff\libs\debug\libprotobuf-lited.lib">
+      <Filter>_libs</Filter>
+    </Library>
+    <Library Include="..\..\Math_3.0\lib\Math_X86Debug.lib">
+      <Filter>_libs</Filter>
+    </Library>
+    <Library Include="..\..\PCSTree\lib\PCSTree_X86Debug.lib">
+      <Filter>_libs</Filter>
+    </Library>
+    <Library Include="..\..\File\lib\File_X86Debug.lib">
+      <Filter>_libs</Filter>
+    </Library>
+    <Library Include="..\..\GLFW\lib\GLFW_X86Debug.lib">
+      <Filter>_libs</Filter>
+    </Library>
+    <Library Include="..\..\Manager\lib\Manager_X86Debug.lib">
+      <Filter>_libs</Filter>
+    </Library>
+    <Library Include="..\..\SB7\lib\SB7_X86Debug.lib">
+      <Filter>_libs</Filter>
+    </Library>
+    <Library Include="..\..\Time\lib\Time_X86Debug.lib">
+      <Filter>_libs</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
