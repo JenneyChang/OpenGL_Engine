@@ -107,9 +107,6 @@ void Game::LoadContent()
 		ShaderObj* pTextureShader = new ShaderGraphics(ShaderObj::Name::TEXTURE, "texture");
 		ShaderMan::Add(pTextureShader);
 
-		ShaderObj* pTextureLight = new ShaderGraphics(ShaderObj::Name::TEXTURE_LIGHT, "texturePointLight");
-		ShaderMan::Add(pTextureLight);
-
 		ShaderObj* pSkinShader = new ShaderGraphics(ShaderObj::Name::SKIN_TEXTURE, "skinTexture");
 		ShaderMan::Add(pSkinShader);
 
