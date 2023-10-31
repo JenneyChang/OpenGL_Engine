@@ -169,12 +169,6 @@
     <None Include="..\..\Shaders\worldMatrix.cs.glsl">
       <Filter>src\Shaders\compute shaders</Filter>
     </None>
-    <None Include="..\..\Shaders\texLight.fs">
-      <Filter>src\Shaders\graphic shaders</Filter>
-    </None>
-    <None Include="..\..\Shaders\texLight.vs">
-      <Filter>src\Shaders\graphic shaders</Filter>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Framework\Framework.h">

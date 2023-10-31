@@ -29,8 +29,6 @@
     <None Include="..\..\Shaders\null.vs" />
     <None Include="..\..\Shaders\skinTexture.fs" />
     <None Include="..\..\Shaders\skinTexture.vs" />
-    <None Include="..\..\Shaders\texLight.fs" />
-    <None Include="..\..\Shaders\texLight.vs" />
     <None Include="..\..\Shaders\wireframe.fs" />
     <None Include="..\..\Shaders\wireframe.vs" />
     <None Include="..\..\Shaders\sprite.fs" />
