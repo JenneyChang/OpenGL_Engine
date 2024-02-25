@@ -13,6 +13,6 @@ The engine has 3 predefined demos. The demos can be activated by setting the #de
 3. Demo 3: Skinned Animations
 
 ## Instructions
-1. Convert engine data
-2. Copy converted data OpenGL_Engine\Data
-3. Set desired demo to true, and Run.
+1. Download converted data from google drive: https://drive.google.com/drive/folders/1OyBEGHnjmBhas2M6Qef55FK0_YezYSsy?usp=sharing
+2. Place converted data into OpenGL\Data folder.
+3. Open project solution, set desired demo to true, and Run.
