@@ -14,7 +14,6 @@ public:
 
 	std::vector<skeleton_proto> origList;
 	std::vector<skeleton_proto> orderedList;	//act don't need this?
-	//std::vector<skeleton_proto> correctedList;	//tech can be arrays...?
 
 	std::vector<int> hierarchyTable;
 
