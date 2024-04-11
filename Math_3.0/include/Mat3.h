@@ -26,9 +26,6 @@ namespace Azul
 		};
 
 	public:
-
-		// Do your magic here
-
 		// Big 4
 		Mat3();
 		Mat3 &operator = (const Mat3 &A);
