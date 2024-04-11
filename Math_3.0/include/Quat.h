@@ -53,12 +53,9 @@ namespace Azul
 		};
 
 	public:
-
-		// Do your magic here
-
 		// Constructors
 
-			// default Constructor 
+		// default Constructor 
 		explicit Quat(void);
 
 		// copy constructor
