@@ -1,7 +1,3 @@
-//-----------------------------------------------------------------------------
-// Copyright 2022, Ed Keenan, all rights reserved.
-//----------------------------------------------------------------------------- 
-
 #ifndef ENGINE_MATH_TRIG_H
 #define ENGINE_MATH_TRIG_H
 
@@ -10,9 +6,6 @@ namespace Azul
 	class Trig
 	{
 	public:
-
-		// Do your magic here
-
 		static float cos(const float  angle_radians);
 		static float sin(const float  angle_radians);
 		static float tan(const float  val);
