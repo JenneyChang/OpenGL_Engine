@@ -42,15 +42,6 @@ void hierarchy_proto::serialize(hierarchy_proto_mssg& out) const
 		//serialize to mssg
 		orderedList[i].serialize(*mssg);
 	}
-	//corrected skeleton list
-	//for (size_t i = 0; i < correctedList.size(); ++i)
-	//{
-	//	//add new element
-	//	skeleton_proto_mssg* mssg = out.add_correctedlist();
-	//	
-	//	//serialize to mssg
-	//	correctedList[i].serialize(*mssg);
-	//}
 
 	//hierarchy table
 	for (size_t i = 0; i < tableSize; ++i)
@@ -96,19 +87,6 @@ void hierarchy_proto::deserialize(const hierarchy_proto_mssg& in)
 		skeleton_proto_mssg mssg = in.orderedlist(i);
 		this->orderedList[(unsigned int)i].deserialize(mssg);
 	}
-
-	//grab corrected skeleton list
-	/*this->correctedList.clear();
-	for (int i = 0; i < in.correctedlist_size(); ++i)
-	{
-		skeleton_proto sproto;
-		this->correctedList.push_back(sproto);
-	}
-	for (int i = 0; i < in.correctedlist_size(); ++i)
-	{
-		skeleton_proto_mssg mssg = in.correctedlist(i);
-		this->correctedList[(unsigned int)i].deserialize(mssg);
-	}*/
 	
 	//grab hierarchy table
 	this->hierarchyTable.clear();
