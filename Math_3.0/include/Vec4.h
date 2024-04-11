@@ -1,7 +1,3 @@
-//-----------------------------------------------------------------------------
-// Copyright 2022, Ed Keenan, all rights reserved.
-//----------------------------------------------------------------------------- 
-
 #ifndef ENGINE_MATH_Vect4D_H
 #define ENGINE_MATH_Vect4D_H
 
@@ -35,9 +31,6 @@ namespace Azul
 	class Vec4 final : public Align16
 	{
 	public:
-
-	    // Do your magic here
-
 		// Big 4
 		Vec4();
 		Vec4(const Vec4 &inV);
