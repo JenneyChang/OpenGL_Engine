@@ -82,9 +82,6 @@ namespace Azul
 		Hint privGetHint() const;
 
 	public:
-
-		// Do your magic here
-
 		// Big 4
 		Mat4();
 		Mat4 &operator = (const Mat4 &A);
