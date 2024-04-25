@@ -95,6 +95,12 @@ Engine allows for the use of multiple cameras; all cameras are created and manag
 >  pCam0->UpdateCamera();
 >  Camera3DMan::SetCurrCam(pCam0);
 >}
+>
+>void Game::UnloadContent()
+>{
+>  // Manager removes and deletes all objects contained in its pool
+>  Camera3DMan::Destroy();
+>}
 >```
 ### Shader Objects
 Shaders are loaded into the engine upon startup and associated with Graphics Objects that utilize them for render. This engine utilizes both graphic and compute shaders. 
@@ -156,6 +162,43 @@ All active objects in a scene are represented as a Game Object. The Game Object 
 >}
 >```  
 2. 3D Game Objects
+>* Rigid Objects
+>>```cpp
+>>void Demo3::Load()
+>>{
+>>  // Loads a Crate Rigid Object
+>>  GraphicsObj3D* pGraphicsObj = new GraphicsObj_Texture(pCrateMesh, pTextureShader, pCrateTex);
+>>  GameObj_Rigid* pCrateObj = new GameObj_Rigid(pGraphicsObj);
+>>  pCrateObj->SetName("Crate3D");
+>>  pCrateObj->SetScale(0.35f, 0.35f, 0.35f);
+>>  pCrateObj->SetDeltaY(0.003f);
+>>  pCrateObj->SetTrans(-2.7f, 1.9f, 0.0f);
+>>  GameObjMan::Add(pCrateObj, GameObjMan::GetRoot());
+>>}
+>>```
+>* Dynamic Objects
+>>```cpp
+>>void Skeleton::SetHierarchy(SSBO* pSSBOIn, Mesh* mesh, Vec3 lightPos, Vec4 lightColor, Vec3 scale, Vec3 trans, Quat rot)
+>>{
+>>  // Set object pivot node (root)
+>>  // (1) grab related shaders
+>>  ShaderObj* pNullShader = ShaderMan::Find(ShaderObj::Name::NULL_SHADER);
+>>  ShaderObj* pSkinShader = ShaderMan::Find(ShaderObj::Name::SKIN_TEXTURE);
+>>  ShaderObj* pWireframeShader = ShaderMan::Find(ShaderObj::Name::WIREFRAME);
+>>
+>>  // (2) define game object
+>>  Mesh* pNullMesh = MeshNodeMan::Find(Mesh::Name::NULL_MESH);
+>>  GraphicsObj3D* pGraphicsObj = new GraphicsObj_Null3D(pNullMesh, pNullShader);
+>>  GameObj_Rigid* pPivot = new GameObj_Rigid(pGraphicsObj);
+>>  pPivot->SetScale(scale);
+>>  pPivot->SetTrans(trans);
+>>  pPivot->SetRot(rot);
+>>  GameObjMan::Add(pPivot, GameObjMan::GetRoot());
+>>
+>>  // Set associated skinned object
+>>  
+>>}
+>>```
 ### Graphics Objects
 ### Models
 ### Animation
