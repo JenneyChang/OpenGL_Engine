@@ -27,14 +27,6 @@ Demo4::~Demo4()
 void Demo4::Load()	
 {
 	//CAMERA SETUP-------------------------------------------------------------
-	//Camera2D* pCam1 = Camera2DMan::Add(Camera::Name::CAMERA_1);
-	//pCam1->SetViewport(0, 0, width, height);
-	//pCam1->SetOrthographic((float)-pCam1->GetScreenWidth() / 2.0f, (float)pCam1->GetScreenWidth() / 2.0f,
-	//	(float)-pCam1->GetScreenHeight() / 2.0f, (float)pCam1->GetScreenHeight() / 2.0f, 1.0f, 1000.0f);
-	//pCam1->SetOrient_Pos(Vec3(0.0f, 1.0f, 0.0f), Vec3(0.0f, 0.0f, -1.0f), Vec3(0.0f, 0.0f, 2.0f));
-	//pCam1->UpdateCamera();
-	//Camera2DMan::SetCurrCam(pCam1);
-
 	Camera3D* pCam0 = Camera3DMan::Add(Camera::Name::CAMERA_0);
 	pCam0->SetViewport(0, 0, width, height);
 	pCam0->SetPerspective(35.0f, float(pCam0->GetScreenWidth()) / float(pCam0->GetScreenHeight()), 1.0f, 10000.0f);
@@ -42,35 +34,13 @@ void Demo4::Load()
 	pCam0->UpdateCamera();
 	Camera3DMan::SetCurrCam(pCam0);
 
-
-	//SHADER -----------------------------------------------------------------
-	//ShaderObj* pSpriteShader = ShaderMan::Find(ShaderObj::Name::SPRITE);
-
-
 	//LOAD TEXTURE---------------------------------------------------------------
 	Texture* pMouseyTex = TextureMan::Add("Data\\Mouse_Diffuse_tex.proto.azul", Texture::Name::MOUSEY);
 
 
 	//LOAD MESH----------------------------------------------------------------
-	//ProtoMesh* pSprite = new ProtoMesh("Data\\sprite.proto.azul");
-	//MeshNodeMan::Add(Mesh::Name::SPRITE, pSprite);
-
 	Mesh* pMouseyMesh = new ProtoMesh("Data\\Mouse_JoyfulJump.proto.azul", pMouseyTex);
 	MeshNodeMan::Add(Mesh::Name::MOUSEY, pMouseyMesh);
-
-
-	//LOAD FONTS----------------------------------------------------------------
-	//GlyphMan::Add(Glyph::Name::CAIYUN_80PT, "Data\\StCaiyun80pt_font.proto.azul", Texture::Name::CAIYUN);
-
-	//GameObj_SpriteBatch* pTextBatch = new GameObj_SpriteBatch(GameObj2D::Name::TextBatch);
-	//pTextBatch->SetName("TextBatch");
-	//GameObjMan::Add(pTextBatch, GameObjMan::GetRoot());
-
-	//GraphicsObj_Font* pGraphicsFont = new GraphicsObj_Font(pSprite, pSpriteShader);
-	//GameObj2D* pAnimText = new GameObj2D(GameObj2D::Name::TextBatch, pGraphicsFont);
-	//GameObjMan::Add(pAnimText, pTextBatch);
-	//FontMan::Add(pGraphicsFont, FontName::Tester, Glyph::Name::CAIYUN_80PT, "SKINNED ANIMATIONS", 850, 1700);
-
 
 	//LOAD ANIMATIONS----------------------------------------------------------
 
@@ -213,9 +183,6 @@ void Demo4::Update()
 {
 	Camera* cam = Camera3DMan::GetCurrCam();
 	cam->UpdateCamera();
-
-	/*cam = Camera2DMan::GetCurrCam();
-	cam->UpdateCamera();*/
 }
 
 void Demo4::Unload()
